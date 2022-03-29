@@ -1,0 +1,28 @@
+/* variables */
+:root{
+    --black: #000;
+}
+
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* body */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Contenedores */
+
+
+/* header */
+
+
+/* footer */
+
+
+/* clases */
+
+
+/* identificadores */
