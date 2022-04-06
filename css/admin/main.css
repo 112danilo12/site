@@ -55,7 +55,7 @@ a{
 
 /* css parte del inicio*/
 .icon-user{
-    width: 50px;
+    width: 40px;
     height: 40px;
     border-radius: 100%;
 }
@@ -76,8 +76,8 @@ a{
 }
 
 .menu-icono{
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
 }
 
 .texto-menu{
@@ -89,8 +89,8 @@ a{
 }
 
 .iconos-menu{
-    width: 23px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
 }
 
@@ -101,4 +101,14 @@ a{
 .margen-top{
     padding-top: 5%;
     padding-left: 0%;
+}
+
+.offcanvas-header{
+    padding: 50px;
+}
+
+.authentication-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
