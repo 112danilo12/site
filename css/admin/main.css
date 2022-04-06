@@ -55,7 +55,7 @@ a{
 
 /* css parte del inicio*/
 .icon-user{
-    width: 50px;
+    width: 40px;
     height: 40px;
     border-radius: 100%;
 }
@@ -77,8 +77,8 @@ a{
 }
 
 .menu-icono{
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
 }
 
 .texto-menu{
@@ -90,8 +90,8 @@ a{
 }
 
 .iconos-menu{
-    width: 23px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
 }
 
@@ -104,19 +104,12 @@ a{
     padding-left: 0%;
 }
 
-.activo:focus{
-    color: var(--green-btn) !important;
-    display: block;
-    border-image: url('../../resources/icons/triangulo-negro-flecha-derecha.png');
-}
-.activo:hover{
-    color: gray !important;
+.offcanvas-header{
+    padding: 50px;
 }
 
-
-.footer-icono{
-    height: 75px;
-    width: 60px;
+.authentication-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-/**/
