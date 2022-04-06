@@ -1,0 +1,104 @@
+/*declarando variables*/
+:root{
+    --green-btn: #7EB928;
+    --green-menu: #005200;
+}
+
+/* css parte del main.html*/
+a{
+    text-decoration: none !important;
+}
+
+.color-btn{
+    background-color: var(--green-btn);
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.login-fondo{
+    background-image: url('../../resources/login/fondo_login.png');
+    height: 100vh;
+    background-size: cover;
+}
+
+.con-lo{
+    padding-top: 10%;
+}
+
+.login-col{
+    background-color: #F5F7FA;
+    height: 600px;
+}
+
+.login-icon{
+    padding-top: 5%;
+    height: 175px;
+    width: 160px;
+}
+
+.titulo-log{
+    text-align: center;
+}
+
+.login-input{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* css parte del inicio*/
+.icon-user{
+    width: 50px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.iconos{
+    width: 24px;
+    height: 24px;
+}
+
+.menu{
+    border-radius: 10%;
+    border: none;
+}
+
+.contenido-menu{
+    background-color: var(--green-menu);
+    color: white;
+}
+
+.menu-icono{
+    height: 70px;
+    width: 70px;
+}
+
+.texto-menu{
+    color: white;
+}
+
+.texto-menu:hover{
+    color: gray;
+}
+
+.iconos-menu{
+    width: 23px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.centrar-contenido{
+    margin-left: 40px;
+}
+
+.margen-top{
+    padding-top: 5%;
+    padding-left: 0%;
+}
