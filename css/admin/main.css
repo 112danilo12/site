@@ -1,7 +1,7 @@
 /*declarando variables*/
 :root{
     --green-btn: #7EB928;
-    --green-menu: #005200;
+    --green-menu: #005200; 
 }
 
 /* css parte del main.html*/
@@ -68,6 +68,7 @@ a{
 .menu{
     border-radius: 10%;
     border: none;
+    margin-right: 10px;
 }
 
 .contenido-menu{
