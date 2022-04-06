@@ -104,6 +104,7 @@ a{
     padding-left: 0%;
 }
 
+<<<<<<< HEAD
 .offcanvas-header{
     padding: 50px;
 }
@@ -113,3 +114,21 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+=======
+.activo:focus{
+    color: var(--green-btn) !important;
+    display: block;
+    border-image: url('../../resources/icons/triangulo-negro-flecha-derecha.png');
+}
+.activo:hover{
+    color: gray !important;
+}
+
+
+.footer-icono{
+    height: 75px;
+    width: 60px;
+}
+
+/**/
+>>>>>>> adba5efd7d5d7e99e2e288b460796e8c1200e9ad
