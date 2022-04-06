@@ -1,91 +1,148 @@
 /* variables */
-:root{
-    --black: #000;
-    --green: #4BB453;
-    --white: #fff;
+:root {
+  --black: #000;
+  --green: #4bb453;
+  --white: #fff;
+  --boton: #FFB400;
 }
 
 /* Iconos de Bootstrap */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 /* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 /* body */
-body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    justify-content: center;
-    transition: 0.7s;
-    z-index: 10;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  transition: 0.7s;
+  z-index: 10;
 }
 
-.navbar{
-    background-color: transparent;
+header.abajo{
+  background: #fff;
+}
+
+header ul li{
+  list-style: none;
+}
+
+.navbar {
+  background-color: transparent;
 }
 
 /* Contenedores */
 
-
 /* header */
-
 
 /* footer */
 
-
 /* clases */
 
-.login-link{
-    text-decoration: none;
+.login-link {
+  text-decoration: none;
+  color: var(--white);
+}
+.login-link:hover {
+  color: var(--green);
+}
+
+.banner {
+  width: 100%;
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  height: 25px;
+}
+
+.boton{
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.btn{
+    background-color: var(--boton);
     color: var(--white);
-}
-.login-link:hover{
-    color: var(--green);
-}
-
-.banner{
-    width: 100%;
-    height: 45vh;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.logo{
-    height: 25px;
+.card-services{
+    padding: 2rem;
+    border: none;
 }
 
+.zona1{
+    height: 100vh;
+}
+
+.fondo{
+  background-image: url("../../resources/img/fondo.png");
+  background-size: cover;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
 
 /* identificadores */
-#fondo:before {
-	content:'';
-	position: absolute;
-    top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: rgba(0,0,0,0.4);
-    height: 45vh;
-}
+/* #fondo:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 45vh;
+} */
 
 /* Media Querys del sitio */
 
-@media (min-width: 400px) and (max-width: 600px){
-    .banner{
-        width: auto;
-        height: 35vh;
-    }
+@media (min-width: 400px) and (max-width: 600px) {
+  .banner {
+    width: auto;
+    height: 35vh;
+  }
+  /* #fondo:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 35vh;
+  } */
 }
 
-@media (min-width: 200px) and (max-width: 399px){
-    .banner{
-        width: auto;
-        height: 20vh;
-    }
+@media (min-width: 200px) and (max-width: 399px) {
+  .banner {
+    width: auto;
+    height: 20vh;
+  }
+  /* #fondo:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 20vh;
+  } */
 }
