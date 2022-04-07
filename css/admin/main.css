@@ -1,11 +1,8 @@
-/* importando tipos de letras */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
 /*declarando variables*/
 :root{
-    --white: #fff;
-    --black: #000;
     --green-btn: #7EB928;
+    --green-menu: #005200;
+    --fondo: #F5F7FA; 
     --btn_hover: #E7F1C7;
     --green-menu: #005200; 
     --banner1_color: #F6F9FF;
@@ -24,6 +21,11 @@ a{
 header{
     position: fixed;
     z-index: 10;
+}
+
+.main-section{
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo{
@@ -113,12 +115,6 @@ header{
     border-radius: 100%;
 }
 
-.main-section{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
 .iconos{
     width: 24px;
     height: 24px;
@@ -173,6 +169,26 @@ header{
     justify-content: space-between;
 }
 
+.fondo-contenedor{
+    background-color: var(--fondo);
+}
+
+.separar{
+    padding-top: 5%;
+}
+
+.separar-card{
+    margin-bottom: 5%;
+}
+
+.activo:focus{
+    color: var(--green-btn) !important;
+    display: block;
+    border-image: url('../../resources/icons/triangulo-negro-flecha-derecha.png');
+}
+.activo:hover{
+    color: gray !important;
+}
 
 /* Footer */
 .banner-footer{
@@ -299,15 +315,3 @@ a{
 a:hover{
     color: var(--iconos_hover);
 }
-
-
-
-
-
-
-
-
-
-
-
-
