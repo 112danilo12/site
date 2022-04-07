@@ -3,6 +3,14 @@
     --green-btn: #7EB928;
     --green-menu: #005200;
     --fondo: #F5F7FA; 
+    --btn_hover: #E7F1C7;
+    --green-menu: #005200; 
+    --banner1_color: #F6F9FF;
+    --iconos: #98C206;
+    --iconos_hover: #589102;
+    --banner_final: #EFEFEF;
+    --main_button: #CDD424;
+    --main_hover: #DDE26D;
 }
 
 /* css parte del main.html*/
@@ -134,3 +142,130 @@ a{
 }
 .activo:hover{
     color: gray !important;
+}
+
+/* Footer */
+.banner-footer{
+    background-color: var(--white);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.marcador{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.banner-suscribe{
+    background: var(--banner1_color);
+}
+
+.suscribe-button{
+    background: var(--green-btn);
+    color: var(--white);
+    border: none;
+}
+
+.suscribe-button:hover{
+    background: var(--btn_hover);
+    color: var(--black);
+    border: none;
+}
+
+#newsletter{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.suscribe-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.suscribe{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.suscribe-letter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-reset{
+    font-weight: 300;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+/* iconos */
+.fa-button{
+    color: var(--iconos);
+    font-size: 20px;
+    margin: 3px;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 45px;
+}
+
+.fa-caret-down{
+    transform: rotate(270deg);
+    color: var(--iconos);
+}
+
+.fa-button:hover{
+    color: var(--iconos_hover);   
+}
+
+.banner-final{
+    background-color: var(--banner_final);
+}
+
+.footer-text{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.footer-final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.spacing-top{
+    margin-top: 35px;
+}
+
+.spacing-bottom{
+    margin-bottom: 35px;
+}
+
+.card{
+    border: none;
+}
+
+ul{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--green-btn);
+}
+a:hover{
+    color: var(--iconos_hover);
+}
