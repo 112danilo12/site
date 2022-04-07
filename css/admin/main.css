@@ -1,11 +1,8 @@
-/* importando tipos de letras */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
 /*declarando variables*/
 :root{
-    --white: #fff;
-    --black: #000;
     --green-btn: #7EB928;
+    --green-menu: #005200;
+    --fondo: #F5F7FA; 
     --btn_hover: #E7F1C7;
     --green-menu: #005200; 
     --banner1_color: #F6F9FF;
@@ -19,35 +16,6 @@
 /* css parte del main.html*/
 a{
     text-decoration: none !important;
-}
-
-header{
-    position: fixed;
-    z-index: 10;
-}
-
-.logo{
-    height: 35px;
-}
-
-.profile{
-    margin-top: 5px;
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
-}
-
-.add-court{
-    background: var(--main_hover);
-    border: none;
-    color: var(--black);
-    font-size: 18px;
-    border: none;
-}
-.add-court:hover{
-    background: var(--main_button);
-    color: var(--black);
-    border: none;
 }
 
 .color-btn{
@@ -65,12 +33,6 @@ header{
     background-image: url('../../resources/login/fondo_login.png');
     height: 100vh;
     background-size: cover;
-}
-
-.zona-1{
-    height: 100vh;
-    position: relative;
-    margin-top: 5rem;
 }
 
 .con-lo{
@@ -105,12 +67,6 @@ header{
     width: 40px;
     height: 40px;
     border-radius: 100%;
-}
-
-.main-section{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .iconos{
@@ -167,6 +123,26 @@ header{
     justify-content: space-between;
 }
 
+.fondo-contenedor{
+    background-color: var(--fondo);
+}
+
+.separar{
+    padding-top: 5%;
+}
+
+.separar-card{
+    margin-bottom: 5%;
+}
+
+.activo:focus{
+    color: var(--green-btn) !important;
+    display: block;
+    border-image: url('../../resources/icons/triangulo-negro-flecha-derecha.png');
+}
+.activo:hover{
+    color: gray !important;
+}
 
 /* Footer */
 .banner-footer{
@@ -293,15 +269,3 @@ a{
 a:hover{
     color: var(--iconos_hover);
 }
-
-
-
-
-
-
-
-
-
-
-
-
