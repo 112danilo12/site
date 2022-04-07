@@ -1,7 +1,8 @@
 /*declarando variables*/
 :root{
     --green-btn: #7EB928;
-    --green-menu: #005200; 
+    --green-menu: #005200;
+    --fondo: #F5F7FA; 
 }
 
 /* css parte del main.html*/
@@ -113,3 +114,23 @@ a{
     align-items: center;
     justify-content: space-between;
 }
+
+.fondo-contenedor{
+    background-color: var(--fondo);
+}
+
+.separar{
+    padding-top: 5%;
+}
+
+.separar-card{
+    margin-bottom: 5%;
+}
+
+.activo:focus{
+    color: var(--green-btn) !important;
+    display: block;
+    border-image: url('../../resources/icons/triangulo-negro-flecha-derecha.png');
+}
+.activo:hover{
+    color: gray !important;
