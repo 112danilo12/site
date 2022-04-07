@@ -13,7 +13,7 @@
     --main_hover: #DDE26D;
 }
 
-/* css parte del main.html*/
+/*inicio css parte del login*/
 a{
     text-decoration: none !important;
 }
@@ -107,8 +107,9 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+/*finaliza el css del login*/
 
-/* css parte del inicio*/
+/*inicia css parte del dashboard*/
 .icon-user{
     width: 40px;
     height: 40px;
