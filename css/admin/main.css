@@ -49,6 +49,13 @@ header{
     color: var(--black);
     border: none;
 }
+.add-court::selection{
+    background-color: var(--main_button);
+}
+
+.add-court:active{
+    background: var(--main_button);
+}
 
 .color-btn{
     background-color: var(--green-btn);
@@ -68,8 +75,7 @@ header{
 }
 
 .zona-1{
-    height: 100vh;
-    position: relative;
+    height: auto;
     margin-top: 5rem;
 }
 
