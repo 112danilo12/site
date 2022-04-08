@@ -13,9 +13,50 @@
     --main_hover: #DDE26D;
 }
 
-/* css parte del main.html*/
+/*inicio css parte del login*/
 a{
     text-decoration: none !important;
+}
+
+header{
+    position: fixed;
+    z-index: 10;
+}
+
+.main-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 35px;
+}
+
+.profile{
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.add-court{
+    background: var(--main_hover);
+    border: none;
+    color: var(--black);
+    font-size: 18px;
+    border: none;
+}
+.add-court:hover{
+    background: var(--main_button);
+    color: var(--black);
+    border: none;
+}
+.add-court::selection{
+    background-color: var(--main_button);
+}
+
+.add-court:active{
+    background: var(--main_button);
 }
 
 .color-btn{
@@ -33,6 +74,11 @@ a{
     background-image: url('../../resources/login/fondo_login.png');
     height: 100vh;
     background-size: cover;
+}
+
+.zona-1{
+    height: auto;
+    margin-top: 5rem;
 }
 
 .con-lo{
@@ -61,8 +107,9 @@ a{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+/*finaliza el css del login*/
 
-/* css parte del inicio*/
+/*inicia css parte del dashboard*/
 .icon-user{
     width: 40px;
     height: 40px;
@@ -150,122 +197,4 @@ a{
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-}
-
-.marcador{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-}
-
-.banner-suscribe{
-    background: var(--banner1_color);
-}
-
-.suscribe-button{
-    background: var(--green-btn);
-    color: var(--white);
-    border: none;
-}
-
-.suscribe-button:hover{
-    background: var(--btn_hover);
-    color: var(--black);
-    border: none;
-}
-
-#newsletter{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.suscribe-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.suscribe{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.suscribe-letter{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.text-reset{
-    font-weight: 300;
-}
-
-li{
-    margin-bottom: 10px;
-}
-
-/* iconos */
-.fa-button{
-    color: var(--iconos);
-    font-size: 20px;
-    margin: 3px;
-    cursor: pointer;
-    margin-top: 12px;
-    margin-bottom: 45px;
-}
-
-.fa-caret-down{
-    transform: rotate(270deg);
-    color: var(--iconos);
-}
-
-.fa-button:hover{
-    color: var(--iconos_hover);   
-}
-
-.banner-final{
-    background-color: var(--banner_final);
-}
-
-.footer-text{
-    font-size: 17px;
-    font-weight: 300;
-}
-
-.footer-final{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 0;
-}
-
-.spacing-top{
-    margin-top: 35px;
-}
-
-.spacing-bottom{
-    margin-bottom: 35px;
-}
-
-.card{
-    border: none;
-}
-
-ul{
-    margin-left: 0;
-    margin-right: 0;
-}
-
-li{
-    list-style: none;
-    text-decoration: none;
-}
-
-a{
-    list-style: none;
-    text-decoration: none;
-    color: var(--green-btn);
-}
-a:hover{
-    color: var(--iconos_hover);
 }
