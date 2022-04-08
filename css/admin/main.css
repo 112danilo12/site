@@ -1,0 +1,200 @@
+/*declarando variables*/
+:root{
+    --green-btn: #7EB928;
+    --green-menu: #005200;
+    --fondo: #F5F7FA; 
+    --btn_hover: #E7F1C7;
+    --green-menu: #005200; 
+    --banner1_color: #F6F9FF;
+    --iconos: #98C206;
+    --iconos_hover: #589102;
+    --banner_final: #EFEFEF;
+    --main_button: #CDD424;
+    --main_hover: #DDE26D;
+}
+
+/*inicio css parte del login*/
+a{
+    text-decoration: none !important;
+}
+
+header{
+    position: fixed;
+    z-index: 10;
+}
+
+.main-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 35px;
+}
+
+.profile{
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+
+.add-court{
+    background: var(--main_hover);
+    border: none;
+    color: var(--black);
+    font-size: 18px;
+    border: none;
+}
+.add-court:hover{
+    background: var(--main_button);
+    color: var(--black);
+    border: none;
+}
+.add-court::selection{
+    background-color: var(--main_button);
+}
+
+.add-court:active{
+    background: var(--main_button);
+}
+
+.color-btn{
+    background-color: var(--green-btn);
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.login-fondo{
+    background-image: url('../../resources/login/fondo_login.png');
+    height: 100vh;
+    background-size: cover;
+}
+
+.zona-1{
+    height: auto;
+    margin-top: 5rem;
+}
+
+.con-lo{
+    padding-top: 10%;
+}
+
+.login-col{
+    background-color: #F5F7FA;
+    height: 600px;
+}
+
+.login-icon{
+    padding-top: 5%;
+    height: 175px;
+    width: 160px;
+}
+
+.titulo-log{
+    text-align: center;
+}
+
+.login-input{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*finaliza el css del login*/
+
+/*inicia css parte del dashboard*/
+.icon-user{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.iconos{
+    width: 24px;
+    height: 24px;
+}
+
+.menu{
+    border-radius: 10%;
+    border: none;
+    margin-right: 10px;
+}
+
+.contenido-menu{
+    background-color: var(--green-menu);
+    color: white;
+}
+
+.menu-icono{
+    height: 60px;
+    width: 60px;
+}
+
+.texto-menu{
+    color: white;
+}
+
+.texto-menu:hover{
+    color: gray;
+}
+
+.iconos-menu{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.centrar-contenido{
+    margin-left: 40px;
+}
+
+.margen-top{
+    padding-top: 5%;
+    padding-left: 0%;
+}
+
+.offcanvas-header{
+    padding: 50px;
+}
+
+.authentication-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fondo-contenedor{
+    background-color: var(--fondo);
+}
+
+.separar{
+    padding-top: 5%;
+}
+
+.separar-card{
+    margin-bottom: 5%;
+}
+
+.activo:focus{
+    color: var(--green-btn) !important;
+    display: block;
+    border-image: url('../../resources/icons/triangulo-negro-flecha-derecha.png');
+}
+.activo:hover{
+    color: gray !important;
+}
+
+/* Footer */
+.banner-footer{
+    background-color: var(--white);
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
