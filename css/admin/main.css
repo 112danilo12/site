@@ -109,6 +109,73 @@ header{
 }
 /*finaliza el css del login*/
 
+/*inicia el css de register*/
+.registro-fondo{
+    background-image: url('../../resources/login/fondo_login.png');
+    height: 105vh;
+    background-size: cover;
+}
+
+.registro-col{
+    background-color: #F5F7FA;
+    height: 980px;
+}
+
+.con-re{
+    padding-top: 1%;
+}
+
+.nombre-input{
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;   
+}
+
+.apellido-input{
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;   
+}
+
+.dui-input{
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 25%;   
+}
+
+.celular-input{
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 25%;   
+}
+
+.tipoe-input{
+    border: none;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;   
+}
+
+.nombre-lbl{
+    margin-left: 30%;
+}
+
+.dui-lbl{
+    margin-left: 21%;
+}
+/*finaliza el css de register*/
+
 /*inicia css parte del dashboard*/
 .icon-user{
     width: 40px;
