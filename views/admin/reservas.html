@@ -83,15 +83,15 @@
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                     <li class="nav-item">
                         <a class="nav-link activo texto-menu" href="inicio.html"><img
-                            src="../../resources/icons/dashboard_layout_24px.png" alt=""
-                            class="iconos-menu">Dahsboard</a>
+                                src="../../resources/icons/dashboard_layout_24px.png" alt=""
+                                class="iconos-menu">Dahsboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link texto-menu" href="../admin/reservas.html"><img
                                 src="../../resources/icons/file.png" alt="" class="iconos-menu">Reservaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link texto-menu" href="#"><img src="../../resources/icons/teamwork.png" alt=""
+                        <a class="nav-link texto-menu" href="../admin/empleados.html"><img src="../../resources/icons/teamwork.png" alt=""
                                 class="iconos-menu">Empleados</a>
                     </li>
                     <li class="nav-item">
@@ -126,66 +126,116 @@
     <div class="container">
         <section class="zona-1">
             <div class="row">
-                <div class="col-md-12 main-section">
+                <div class="col-md-12 main-section spacing-top">
                     <h2>Reservación de Cancha</h2>
                     <button type="button" class="btn add-court" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Agregar Reservaciones</button>
                 </div>
-
-
                 <!-- Modal  -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Agregar una reseración</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Agregar una reservación</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <div class="container">
-                                    <h3>Registrar venta</h3>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
-                                                <label for="example" class="form-label">Fecha:</label>
-                                                <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                    <h3 class="spacing-bottom">Registrar venta</h3>
+                                    <form action="" method="post" id="reserva_cancha">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Fecha:</label>
+                                                    <input type="date" class="form-control modal-input"
+                                                        id="exampleFormControlInput1" placeholder="name@example.com">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Balones alquilados:</label>
+                                                    <input type="number" class="form-control modal-input"
+                                                        id="exampleFormControlInput1" placeholder="cantidad de balones">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Chalecos alquilados:</label>
+                                                    <input type="number" class="form-control modal-input"
+                                                        id="exampleFormControlInput1" placeholder="cantidad de balones">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Observación:</label>
+                                                    <input type="text" class="form-control modal-input"
+                                                        id="exampleFormControlInput1" placeholder="cantidad de balones">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Asistencia:</label>
+                                                    <select class="form-select modal-input" aria-label="Default select example">
+                                                        <option selected>Seleccionar</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Cancha en alquiler:</label>
+                                                    <select class="form-select modal-input" aria-label="Default select example">
+                                                        <option selected>Seleccionar</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="mb-3">
-                                                <label for="example" class="form-label">Balones alquilados:</label>
-                                                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="cantidad de balones">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Nombre cliente:</label>
+                                                    <input type="text" class="form-control modal-input"
+                                                        id="exampleFormControlInput1" placeholder="cantidad de balones">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Empleado:</label>
+                                                    <select class="form-select modal-input" aria-label="Default select example">
+                                                        <option selected>Nelson Almendares</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Horario:</label>
+                                                    <select class="form-select modal-input" aria-label="Default select example">
+                                                        <option selected>Seleccionar</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Tipo de balón alquilado:</label>
+                                                    <select class="form-select modal-input" aria-label="Default select example">
+                                                        <option selected>Cuero</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="example" class="form-label">Tipo de chaleco:</label>
+                                                    <select class="form-select modal-input" aria-label="Default select example">
+                                                        <option selected>Filtros verdes</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="mb-3">
-                                                <label for="example" class="form-label">Chalecos alquilados:</label>
-                                                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="cantidad de balones">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="example" class="form-label">Observación:</label>
-                                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="cantidad de balones">
-                                            </div>
-                                            <div class="dropdown">
-                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                                  Dropdown link
-                                                </a>
-                                              
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                </ul>
-                                              </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            hola
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-outline-danger"
-                                    data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-outline-success">Save changes</button>
+                                <button type="button" class="btn btn-outline-success">Agregar reserva</button>
+                                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cancelar</button>
                             </div>
                         </div>
                     </div>
@@ -197,11 +247,13 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Ext.</th>
-                                        <th>City</th>
-                                        <th data-type="date" data-format="YYYY/MM/DD">Start Date</th>
-                                        <th>Completion</th>
+                                        <th>Nombre</th>
+                                        <th>Empleado.</th>
+                                        <th>Horario</th>
+                                        <th data-type="date" data-format="YYYY/MM/DD">Fecha</th>
+                                        <th>Balones</th>
+                                        <th>Asistencia</th>
+                                        <th>Editar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -211,6 +263,114 @@
                                         <td>Curicó</td>
                                         <td>2005/02/11</td>
                                         <td>37%</td>
+                                        <td>Confirmada</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <form action="" method="post" id="editar_datos">
+                                                            <div class="row">
+                                                                <h3 class="spacing-bottom">Editar reserva:</h3>
+                                                                <div class="col-md-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Fecha:</label>
+                                                                        <input type="date" class="form-control modal-input"
+                                                                            id="exampleFormControlInput1" placeholder="name@example.com">
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Balones alquilados:</label>
+                                                                        <input type="number" class="form-control modal-input"
+                                                                            id="exampleFormControlInput1" placeholder="cantidad de balones">
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Chalecos alquilados:</label>
+                                                                        <input type="number" class="form-control modal-input"
+                                                                            id="exampleFormControlInput1" placeholder="cantidad de balones">
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Observación:</label>
+                                                                        <input type="text" class="form-control modal-input"
+                                                                            id="exampleFormControlInput1" placeholder="cantidad de balones">
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Asistencia:</label>
+                                                                        <select class="form-select modal-input" aria-label="Default select example">
+                                                                            <option selected>Seleccionar</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Cancha en alquiler:</label>
+                                                                        <select class="form-select modal-input" aria-label="Default select example">
+                                                                            <option selected>Seleccionar</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Nombre cliente:</label>
+                                                                        <input type="text" class="form-control modal-input"
+                                                                            id="exampleFormControlInput1" placeholder="cantidad de balones">
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Empleado:</label>
+                                                                        <select class="form-select modal-input" aria-label="Default select example">
+                                                                            <option selected>Nelson Almendares</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Horario:</label>
+                                                                        <select class="form-select modal-input" aria-label="Default select example">
+                                                                            <option selected>Seleccionar</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Tipo de balón alquilado:</label>
+                                                                        <select class="form-select modal-input" aria-label="Default select example">
+                                                                            <option selected>Cuero</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                        <label for="example" class="form-label">Tipo de chaleco:</label>
+                                                                        <select class="form-select modal-input" aria-label="Default select example">
+                                                                            <option selected>Filtros verdes</option>
+                                                                            <option value="1">One</option>
+                                                                            <option value="2">Two</option>
+                                                                            <option value="3">Three</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Theodore Duran</td>
@@ -218,6 +378,34 @@
                                         <td>Dhanbad</td>
                                         <td>1999/04/07</td>
                                         <td>97%</td>
+                                        <td>Confirmada</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <div class="row">
+                                                      <form action="" method="post" id="editar_datos">
+                                                        <div class="col-md-6">
+                                                            
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            
+                                                        </div>v
+                                                      </form>
+                                                  </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Kylie Bishop</td>
@@ -225,6 +413,25 @@
                                         <td>Norman</td>
                                         <td>2005/09/08</td>
                                         <td>63%</td>
+                                        <td>Ausente</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Willow Gilliam</td>
@@ -232,6 +439,25 @@
                                         <td>Amqui</td>
                                         <td>2009/29/11</td>
                                         <td>30%</td>
+                                        <td>Ausente</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Blossom Dickerson</td>
@@ -239,6 +465,25 @@
                                         <td>Kempten</td>
                                         <td>2006/11/09</td>
                                         <td>17%</td>
+                                        <td>Confirmada</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centeredv">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Elliott Snyder</td>
@@ -246,6 +491,25 @@
                                         <td>Enines</td>
                                         <td>2006/03/08</td>
                                         <td>57%</td>
+                                        <td>Ausente</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Castor Pugh</td>
@@ -253,6 +517,25 @@
                                         <td>Neath</td>
                                         <td>2014/23/12</td>
                                         <td>93%</td>
+                                        <td>Confirmada</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Pearl Carlson</td>
@@ -260,6 +543,25 @@
                                         <td>Cobourg</td>
                                         <td>2014/31/08</td>
                                         <td>100%</td>
+                                        <td>Confirmada</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Deirdre Bridges</td>
@@ -267,6 +569,25 @@
                                         <td>Eberswalde-Finow</td>
                                         <td>2014/26/08</td>
                                         <td>44%</td>
+                                        <td>Confirmada</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Daniel Baldwin</td>
@@ -274,6 +595,25 @@
                                         <td>Moircy</td>
                                         <td>2000/11/01</td>
                                         <td>33%</td>
+                                        <td>Confirmada</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Phelan Kane</td>
@@ -281,6 +621,25 @@
                                         <td>Germersheim</td>
                                         <td>1999/16/04</td>
                                         <td>77%</td>
+                                        <td>Ausente</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
                                     <tr>
                                         <td>Quentin Salas</td>
@@ -288,13 +647,34 @@
                                         <td>Los Andes</td>
                                         <td>2011/26/01</td>
                                         <td>49%</td>
+                                        <td>Confirmada</td>
+                                        <td><button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editarDatos"><i class="fa-solid fa-ellipsis-vertical"></i></button></td>
+                                        <div class="modal fade" id="editarDatos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                     </tr>
-                                    <tr>
+                                    <!-- <tr>
                                         <td>Armand Suarez</td>
                                         <td>6583</td>
                                         <td>Funtua</td>
                                         <td>1999/06/11</td>
                                         <td>9%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Gretchen Rogers</td>
@@ -302,6 +682,8 @@
                                         <td>Moxhe</td>
                                         <td>1998/26/10</td>
                                         <td>24%</td>
+                                        <td>Ausentev</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Harding Thompson</td>
@@ -309,6 +691,8 @@
                                         <td>Abeokuta</td>
                                         <td>2008/06/08</td>
                                         <td>10%</td>
+                                        <td>Ausente</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Mira Rocha</td>
@@ -316,6 +700,8 @@
                                         <td>Port Harcourt</td>
                                         <td>2002/04/10</td>
                                         <td>14%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Drew Phillips</td>
@@ -323,6 +709,8 @@
                                         <td>Goes</td>
                                         <td>2011/18/10</td>
                                         <td>58%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Emerald Warner</td>
@@ -330,6 +718,8 @@
                                         <td>Chiavari</td>
                                         <td>2002/08/04</td>
                                         <td>58%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Colin Burch</td>
@@ -337,6 +727,8 @@
                                         <td>Anamur</td>
                                         <td>2004/02/01</td>
                                         <td>34%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Russell Haynes</td>
@@ -344,6 +736,8 @@
                                         <td>Frascati</td>
                                         <td>2015/28/04</td>
                                         <td>18%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Brennan Brooks</td>
@@ -351,6 +745,8 @@
                                         <td>Olmué</td>
                                         <td>2000/18/04</td>
                                         <td>2%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Kane Anthony</td>
@@ -358,6 +754,8 @@
                                         <td>LaSalle</td>
                                         <td>2006/21/05</td>
                                         <td>93%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Scarlett Hurst</td>
@@ -365,6 +763,8 @@
                                         <td>Brampton</td>
                                         <td>2015/07/01</td>
                                         <td>94%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>James Scott</td>
@@ -372,6 +772,8 @@
                                         <td>Meux</td>
                                         <td>2007/30/05</td>
                                         <td>55%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Desiree Ferguson</td>
@@ -379,6 +781,8 @@
                                         <td>Gojra</td>
                                         <td>2009/15/02</td>
                                         <td>81%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Elaine Bishop</td>
@@ -386,6 +790,8 @@
                                         <td>Petrópolis</td>
                                         <td>2008/23/12</td>
                                         <td>48%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Hilda Nelson</td>
@@ -393,6 +799,8 @@
                                         <td>Posina</td>
                                         <td>2004/23/05</td>
                                         <td>76%</td>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
                                     </tr>
                                     <tr>
                                         <td>Evangeline Beasley</td>
@@ -400,7 +808,9 @@
                                         <td>Caplan</td>
                                         <td>2009/12/03</td>
                                         <td>62%</td>
-                                    </tr>
+                                        <td>Confirmada</td>
+                                        <td><i class="fa-solid fa-ellipsis-vertical"></i></td>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
@@ -410,105 +820,6 @@
             </div>
         </section>
     </div>
-
-    <section>
-        <div class="banner-suscribe">
-            <div class="banner-suscribe">
-                <div class="container">
-                    <div class="row" id="newsletter">
-                        <div class="col-md-12">
-                            <form method="get" class="suscribe">
-                                <h4 class="suscribe-letter">Our newsleter</h4>
-                                <div class="row d-flex justify-content-center align-items-center">
-                                    <div class="col-md-6">
-                                        <p class="suscribe-text">Cras fermentum odio eu feugiat lide par naso tierra.
-                                            Justo eget nada terra videa magna derita valies darta donna mare fermentum
-                                            iaculis
-                                        </p>
-                                        <div class="input-group mb-3">
-                                            <input type="text" class="form-control" aria-describedby="button-addon2">
-                                            <button class="btn btn-outline-secondary suscribe-button" type="button"
-                                                id="button-addon2">Suscribe</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="contenedor align-items-center">
-            <div class="banner-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4 class="marcador"><img class="img-fluid logo" src="../../resources/logo.png" alt="">
-                                PlaySoccer</h4>
-                            <h6 class="text-reset">Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada
-                                terra videa magna
-                                derita valies darta donna mare fermentum iaculis eu non diam phasellus.
-                            </h6>
-                            
-                            <div class="icons-footer">
-                                <i class="fa-brands fa-twitter fa-button" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="Go on Twitter"></i>
-                                <i class="fa-brands fa-instagram fa-button data-bs-toggle=" tooltip
-                                    data-bs-placement="top" title="Go on Instagram" ></i>
-                                <i class="fa-brands fa-facebook-square fa-button data-bs-toggle=" tooltip
-                                    data-bs-placement="top" title="Go on Facebook"></i>
-                                <i class=" fa-brands fa-linkedin fa-button data-bs-toggle="tooltip
-                                    data-bs-placement="top" title="Go on Linkedin"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row spacing-bottom">
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h6 class="card-title mb-3">USEFUL LINKS</h6>
-                                            <form>
-                                                <li class=""><i class="fa-solid fa-caret-down"></i> <a href="#"
-                                                        class="card-link links-footer">Dahsboard</a></li>
-                                                <li><i class="fa-solid fa-caret-down"></i> <a href="#"
-                                                        class="card-link links-footer">Reservaciones</a></li>
-                                                <li><i class="fa-solid fa-caret-down"></i> <a href="#"
-                                                        class="card-link">Empleados</a></li>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h6 class="card-title">OUR SERVICES</h6>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h6 class="card-title">CONTACT US</h6>
-                                            <p class="card-text">A108 Adam Street
-                                                New York, NY 535022
-                                                United States
-                                            </p>
-                                            <p><span class="fw-bold">Phone:</span> +503 5875-6585</p>
-                                            <p><span class="fw-bold" class="fw-bold">Email:</span> info@example.com</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer>
         <div class="contenerdor">
             <div class="banner-final">
