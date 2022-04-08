@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../css/admin/main.css">
+
+    <title>Chalecos</title>
+</head>
+
+<body>
+
+    <!-- Boton disparador del modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalagregarchalecos">
+        Agregar Chalecos
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalagregarchalecos" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Registrar Chalecos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenedore para agregar el cuerpo del modal-->
+                    <div class="containermodalhalecos">
+                        <!--primera fila de la parrilla -->
+                        <div class="row">
+                            <!--primera columna de la primera fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <label for="exampleInputEmail1">Costo del chaleco:</label>
+                                <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="">
+                            </div>
+                            <!--segunda columna de la primera fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <label for="exampleInputEmail1">Talla de chalecos:</label>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="comboboxregistrochalecos" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">S</a>
+                                        <a class="dropdown-item" href="#">M</a>
+                                        <a class="dropdown-item" href="#">L</a>
+                                        <a class="dropdown-item" href="#">Especial</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--segunda fila de la parrilla -->
+                        <div class="row" id="segundorowdelaparrillaregistrochaleco">
+                            <!--primera columna de la segunda fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <label for="exampleInputEmail1">Cantidad de chalecos:</label>
+                                <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="">
+                            </div>
+                            <!--segunda columna de la segunda fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <label for="exampleInputEmail1">Color del chaleco:</label>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="comboboxregistrochalecos" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Amarillo</a>
+                                        <a class="dropdown-item" href="#">Naranja</a>
+                                        <a class="dropdown-item" href="#">blanco</a>
+                                        <a class="dropdown-item" href="#">Azul</a>
+                                        <a class="dropdown-item" href="#">Verde</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnagregarchaleco" class="btn btn-secondary" data-dismiss="modal">Agregar
+                        Chaleco</button>
+                    <button type="button" id="btncancelaragregarchaleco" class="btn btn-primary">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--Modal para editar Chaleco-->
+    <!-- Boton disparador del modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modaleditarchalecos">
+        Editar Chalecos
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modaleditarchalecos" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Editar Chalecos</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenedore para agregar el cuerpo del modal-->
+                    <div class="containermodalhalecos">
+                        <!--primera fila de la parrilla -->
+                        <div class="row">
+                            <!--primera columna de la primera fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <label for="exampleInputEmail1">Costo del chaleco:</label>
+                                <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="$5.00">
+                            </div>
+                            <!--segunda columna de la primera fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <label for="exampleInputEmail1">Talla de chalecos:</label>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="comboboxregistrochalecos" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        S
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">S</a>
+                                        <a class="dropdown-item" href="#">M</a>
+                                        <a class="dropdown-item" href="#">L</a>
+                                        <a class="dropdown-item" href="#">Especial</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--segunda fila de la parrilla -->
+                        <div class="row" id="segundorowdelaparrillaregistrochaleco">
+                            <!--primera columna de la segunda fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <label for="exampleInputEmail1">Cantidad de chalecos:</label>
+                                <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="25">
+                            </div>
+                            <!--segunda columna de la segunda fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <label for="exampleInputEmail1">Color del chaleco:</label>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="comboboxregistrochalecos" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Amarillo
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Amarillo</a>
+                                        <a class="dropdown-item" href="#">Naranja</a>
+                                        <a class="dropdown-item" href="#">blanco</a>
+                                        <a class="dropdown-item" href="#">Azul</a>
+                                        <a class="dropdown-item" href="#">Verde</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnagregarchaleco" class="btn btn-secondary" data-dismiss="modal">Editar
+                        Chaleco</button>
+                    <button type="button" id="btncancelaragregarchaleco" class="btn btn-primary">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+ <!--Modal para agregar cleinte-->
+    <!-- Boton disparador del modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalagregarcliente">
+        Agregar Cliente
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalagregarcliente" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Agregar Cliente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenedore para agregar el cuerpo del modal-->
+                    <div class="containermodalhalecos">
+                        <!--primera fila de la parrilla -->
+                        <div class="row">
+                            <!--primera columna de la primera fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <!--formulario para agregar un cliente-->
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre</label>
+                                        <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Apellidos</label>
+                                        <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">DUI: .</label>
+                                        <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Celular</label>
+                                        <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                </form>
+                            </div>
+                            <!--segunda columna de la primera fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Foto</label>
+                                        <input type="email" class="form-controlregistrochalecosfalso"
+                                            id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                        <img class="card-img-top" id="imagendeperfilcliente"
+                                            src="../../resources/img/agregarfotodeperfil.png" alt="Card image cap">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Correo</label>
+                                        <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Contraseña</label>
+                                            <input type="email" class="form-controlregistrochalecos"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Confirmar contraseñ</label>
+                                            <input type="email" class="form-controlregistrochalecos"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnagregarchaleco" class="btn btn-secondary" data-dismiss="modal">Agregar
+                        Cliente</button>
+                    <button type="button" id="btncancelaragregarchaleco" class="btn btn-primary">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Modal para editar cliente-->
+    <!-- Boton disparador del modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmodificarcliente">
+        Modificar Cliente
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalmodificarcliente" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Agregar Cliente</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenedore para agregar el cuerpo del modal-->
+                    <div class="containermodalhalecos">
+                        <!--primera fila de la parrilla -->
+                        <div class="row">
+                            <!--primera columna de la primera fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <!--formulario para agregar un cliente-->
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Nombre</label>
+                                        <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Apellidos</label>
+                                        <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">DUI: .</label>
+                                        <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Celular</label>
+                                        <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="">
+                                    </div>
+                                </form>
+                            </div>
+                            <!--segunda columna de la primera fila de la columna-->
+                            <div class="col-6" id="costochalecos">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Foto</label>
+                                        <input type="email" class="form-controlregistrochalecosfalso"
+                                            id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                        <img class="card-img-top" id="imagendeperfilcliente"
+                                            src="../../resources/img/agregarfotodeperfil.png" alt="Card image cap">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlInput1">Correo</label>
+                                        <input type="email" class="form-controlregistrochalecos" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Contraseña</label>
+                                            <input type="email" class="form-controlregistrochalecos"
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnagregarchaleco" class="btn btn-secondary" data-dismiss="modal">Agregar
+                        Cliente</button>
+                    <button type="button" id="btncancelaragregarchaleco" class="btn btn-primary">cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

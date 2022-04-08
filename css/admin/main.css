@@ -1,0 +1,68 @@
+/*inician el codigo de disigner para modal_registro_chalecos*/
+
+.cardcontenidomodal {
+    float: left;
+    width: 50%;
+    height: 30%;
+    background: green;
+}
+
+.card_modal_registro_chalecos {
+    background: red;
+}
+
+.modal fade {
+    background: black;
+    width: 100%;
+}
+
+.containermodalhalecos {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+#costochalecos {
+    text-align: left;
+}
+
+.form-controlregistrochalecos {
+    width: 90%;
+    border: 0px;
+    background-color: #E6E6E6;
+    padding-top: 0px;
+    border-color: #E6E6E6;
+}
+
+#segundorowdelaparrillaregistrochaleco {
+    padding-top: 40px;
+}
+
+#comboboxregistrochalecos {
+    background-color: #E6E6E6;
+    color: black;
+    width: 60%;
+    text-align: right;
+    border-color: #E6E6E6;
+}
+
+#btnagregarchaleco {
+    background-color: #7EB928;
+    border-color: #7EB928;
+}
+
+#btncancelaragregarchaleco {
+    background-color:#C8C8C8;
+    border-color: #C8C8C8;
+}
+
+#imagendeperfilcliente{
+    width: 50%;
+    height: 150px;
+}
+
+.form-controlregistrochalecosfalso{
+    background-color: #FFFFFF;
+    border: none;
+}
